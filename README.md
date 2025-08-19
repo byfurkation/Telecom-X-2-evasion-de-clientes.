@@ -1,7 +1,7 @@
 ![portada challenge](https://github.com/byfurkation/Telecom-X-2-evasion-de-clientes./blob/main/assets/portada_proyecto.png?raw=true)
 
-# <h1 align="center"> TelecomX_datos - en Python </h1>
-## <h1 align="center"> Desafío utilizando ETL, generación de gráficos e informe. </h1>
+# <h1 align="center"> TelecomX- Modelos de predicción y su evaluación - Tree decision, KNN y Random forest </h1>
+## <h1 align="center"> Machine Learning en Python. </h1>
 
 ![Static Badge](https://img.shields.io/badge/Data%20Analysis-Python-brightgreen?style=flat-square)
 
@@ -23,19 +23,35 @@
 
 ## 1 El propósito del análisis realizado
 
-Has sido contratado como asistente de análisis de datos en Telecom X y formarás parte del proyecto "Churn de Clientes". La empresa enfrenta una alta tasa de cancelaciones y necesita comprender los factores que llevan a la pérdida de clientes.
+En este proyecto me propuse aplicar de manera práctica algunos de los conceptos más importantes de estadística, porque son la base para entender cómo se comportan los datos y poder tomar mejores decisiones con ellos.
 
-Tu desafío será recopilar, procesar y analizar los datos, utilizando Python y sus principales bibliotecas para extraer información valiosa. A partir de tu análisis, el equipo de Data Science podrá avanzar en modelos predictivos y desarrollar estrategias para reducir la evasión.
+Lo primero que hice fue preparar y dividir los datos de la forma correcta, ya que para poder crear modelos predictivos es clave tener un buen balance entre los datos de entrenamiento y los de prueba. Si no se hace bien este paso, los modelos simplemente no son confiables.
+
+Después me enfoqué en analizar la correlación entre variables, lo que me permitió ver cuáles factores están más relacionados con la cancelación de servicios, es decir, con el churn. Con esa información a la mano, utilicé la regresión lineal para modelar esas relaciones y entender qué tanto impacta cada variable en el comportamiento de los clientes.
+
+Al final, con todo esto, logré sentar una *base sólida para avanzar hacia modelos de machine learning *que predicen la evasión de clientes. Esto no solo sirve para anticipar el riesgo de pérdida, sino también para ayudar a la empresa a tomar decisiones más estratégicas y reducir el impacto del churn.
 
 **Requisitos:**
 
-✅ Importar y manipular datos desde una API de manera eficiente.
+✅ Cargar y manipular datos desde un archivo a través de un libro de Júpiter en Google Colab.
 
 ✅ Aplicar los conceptos de ETL (Extracción, Transformación y Carga) en la preparación de los datos.
 
 ✅ Crear visualizaciones estratégicas para identificar patrones y tendencias.
 
-✅ Realizar un Análisis Exploratorio de Datos (EDA) y generar un informe con insights relevantes.
+✅ Realizar un Análisis Exploratorio de Datos (EDA).
+
+✅ correlacionar y seleccionar variables.
+
+✅ Escalar y normalizar datos para su uso en modelos de predicción.
+
+✅ Generar Modelos de predicción para Machine learning.
+
+✅ Evaluación de los modelos de predicción con Accuracy, Precision, Recall, F1-Score, ROC-AUC.
+
+✅ Analizar la importancia de las variables de cada modelo de predicción.
+
+✅ Generar un informe con insights relevantes.
 
 ## 2 La estructura del proyecto y organización de los archivos
 
@@ -138,7 +154,7 @@ El informe debe contener:
 
 * Recomendaciones.
 
-6️⃣**Análisis de correlación entre variables OPCIONAL** 
+6️⃣**Análisis de correlación entre variables ** 
 
 Como un paso adicional, puedes explorar la correlación entre diferentes variables del dataset. Esto puede ayudar a identificar qué factores tienen mayor relación con la evasión de clientes, como:
 
@@ -197,12 +213,15 @@ Si hemos seleccionado Descargar el proyecto podemos subirlo a Google Drive Y des
 
 ![11. ruta_3](https://github.com/byfurkation/TelecomX_datos/blob/main/assets/11.%20ruta_3.png?raw=true)
 
-## 5 Instrucciones para ejecutar el notebook
+## 5 Instrucciones para ejecutar el notebook de Jupyter en Google Colab. 
+
+[Ingresar al link:]([URL](https://github.com/byfurkation/Telecom-X-2-evasion-de-clientes./blob/main/X_telecom_2_evasion_clientes.ipynb )
 
 Una vez dentro del proyecto encontraremos secciones de código, las cuales estando dentro de ellas, podremos ejecutarlo mediante la presión de los botones "shift" + "enter" o con el botón de Play que aparece a la izquierda del código. De esta manera si alguien quiere agregar código para realizar algún cálculo se puede llevar a cabo dentro de estas celdas o generar nuevas para correr otro código diferente, en el presente se utiliza python. 
 
 ## 6 Tecnologías utilizadas
-* Python. Pandas y Matplotlib, Seaborn para llevar a cabo ETL. 
+* Python. Pandas y Matplotlib, plotly.express y Seaborn para llevar a cabo ETL.
+* Python. sklearn y  relacionados tales como: tree, metrics, model_selection, ensemble, preprocessing, neighbors, entre otros para modelos de predicción.
 * Jupiter Notebook en Google Colab.
 * Github.
 
