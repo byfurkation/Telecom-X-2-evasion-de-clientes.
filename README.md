@@ -62,18 +62,27 @@ Para llevar a cabo el presente análisis, se puede dividir en las siguientes eta
 3️⃣**Preparación de los Datos**🛠️
 
 4️⃣**Correlación y Selección de Variables** 🎯
+
 Análisis de descriptivo
+
 Análisis de Correlación
+
 Análisis Dirigido
 
 5️⃣**Modelado Predictivo** 🤖
+
 Separación de Datos
+
 Creación de Modelos: Tree decision, Random forest y KNN.
+
 Escalación y Normalización de datos
+
 Balanceo de datos
 
 6️⃣**Interpretación y Conclusiones** 📋
+
 Análisis de la Importancia de las Variables
+
 Informe de Análisis de Churn: Factores de Cancelación de Clientes
 
 ## 3 Acceso al proyecto 
